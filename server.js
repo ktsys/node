@@ -44,7 +44,7 @@ var asyncc 	= require('async');
 var connector = new builder.ChatConnector({
     appId: process.env.BOTFRAMEWORK_APPID, 
     appPassword: process.env.BOTFRAMEWORK_APPSECRET
-};
+});
 
 var bot = new builder.UniversalBot(connector, function (session) {
     session.send('Sorry, I did not understand \'%s\'. Type \'help\' if you need assistance.', session.message.text);

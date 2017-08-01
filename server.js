@@ -39,7 +39,7 @@ var builder 	= require('botbuilder');
 var restify 	= require('restify');
 var sqlite3 	= require('sqlite3').verbose();
 var luisdb 	= new sqlite3.Database('./luisAppDb.db','OPEN_READONLY');
-var async 	= require('async'); 
+var asyncc 	= require('async'); 
 
 var connector = new builder.ChatConnector({
     appId: process.env.BOTFRAMEWORK_APPID, 
